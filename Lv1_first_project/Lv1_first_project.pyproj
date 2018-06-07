@@ -7,6 +7,7 @@
     <InterpreterId>{6de70593-0d0c-4144-9fcd-2affbfb655b9}</InterpreterId>
     <InterpreterVersion>3.5</InterpreterVersion>
     <DjangoSettingsModule>first_project.settings</DjangoSettingsModule>
+    <WebBrowserPort>8001</WebBrowserPort>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -30,6 +31,18 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="first_app\admin.py" />
+    <Compile Include="first_app\apps.py" />
+    <Compile Include="first_app\migrations\__init__.py" />
+    <Compile Include="first_app\models.py" />
+    <Compile Include="first_app\tests.py" />
+    <Compile Include="first_app\urls.py" />
+    <Compile Include="first_app\views.py" />
+    <Compile Include="first_app\__init__.py" />
+    <Compile Include="first_project\settings.py" />
+    <Compile Include="first_project\urls.py" />
+    <Compile Include="first_project\wsgi.py" />
+    <Compile Include="first_project\__init__.py" />
     <Compile Include="manage.py" />
   </ItemGroup>
   <ItemGroup>
@@ -48,6 +61,11 @@
       <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
       <Architecture>X86</Architecture>
     </Interpreter>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="first_app\" />
+    <Folder Include="first_app\migrations\" />
+    <Folder Include="first_project\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Django.targets" />
   <!-- Specify pre- and post-build commands in the BeforeBuild and 
