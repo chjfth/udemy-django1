@@ -18,7 +18,7 @@ from django.contrib import admin
 from basicapp import views
 
 urlpatterns = [
-    url(r'^$',views.index,name='index'),
-    url(r'^admin/', admin.site.urls),
-    url(r'^formpage/',views.form_name_view,name='form_name')
+	url(r'^$', views.index, name='index'),
+	url(r'^admin/', admin.site.urls),
+	url(r'^formpage/', views.form_name_view, name='form_name')
 ]
