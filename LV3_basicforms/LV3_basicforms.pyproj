@@ -47,17 +47,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="basicapp\migrations\__pycache__\__init__.cpython-35.pyc" />
-    <Content Include="basicapp\__pycache__\admin.cpython-35.pyc" />
-    <Content Include="basicapp\__pycache__\forms.cpython-35.pyc" />
-    <Content Include="basicapp\__pycache__\models.cpython-35.pyc" />
-    <Content Include="basicapp\__pycache__\views.cpython-35.pyc" />
-    <Content Include="basicapp\__pycache__\__init__.cpython-35.pyc" />
-    <Content Include="basicforms\__pycache__\settings.cpython-35.pyc" />
-    <Content Include="basicforms\__pycache__\urls.cpython-35.pyc" />
-    <Content Include="basicforms\__pycache__\wsgi.cpython-35.pyc" />
-    <Content Include="basicforms\__pycache__\__init__.cpython-35.pyc" />
     <Content Include="requirements.txt" />
     <Content Include="db.sqlite3" />
+    <Content Include="templates\basicapp\form_page.html" />
+    <Content Include="templates\basicapp\index.html" />
   </ItemGroup>
   <ItemGroup>
     <Interpreter Include="..\..\..\venv\env35j1\">
@@ -76,9 +69,9 @@
     <Folder Include="basicapp\" />
     <Folder Include="basicapp\migrations\" />
     <Folder Include="basicapp\migrations\__pycache__\" />
-    <Folder Include="basicapp\__pycache__\" />
     <Folder Include="basicforms\" />
-    <Folder Include="basicforms\__pycache__\" />
+    <Folder Include="templates\" />
+    <Folder Include="templates\basicapp\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Django.targets" />
   <!-- Specify pre- and post-build commands in the BeforeBuild and 
